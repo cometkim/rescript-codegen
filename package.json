@@ -1,4 +1,16 @@
 {
-  "name": "rescript-openapi-codegen",
-  "packageManager": "yarn@4.0.2"
+  "name": "project",
+  "private": true,
+  "type": "module",
+  "packageManager": "yarn@4.0.2",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@graphql-codegen/core": "^4.0.0",
+    "graphql": "^16.8.1",
+    "graphql-codegen-rescript": "workspace:*",
+    "typescript": "^5.3.3",
+    "vite-node": "^1.1.1"
+  }
 }

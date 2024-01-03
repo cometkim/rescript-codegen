@@ -1,0 +1,68 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`graphql-codegen-rescript > success 1`] = `
+"module Types = {
+  type unknown
+  
+  type rec \\"Date" = unknown
+  
+  and \\"Query.me" = \\"User"
+  and \\"Query.user" = option<\\"User">
+  and \\"Query.allUsers" = option<array<option<\\"User">>>
+  and \\"Query.search" = array<\\"SearchResult">
+  and \\"Query.myChats" = array<\\"Chat">
+  and \\"Query" = {
+    me: \\"Query.me",
+    user: \\"Query.user",
+    allUsers: \\"Query.allUsers",
+    search: \\"Query.search",
+    myChats: \\"Query.myChats",
+  }
+  
+  and \\"Role" =
+    | USER
+    | ADMIN
+  
+  and \\"Node.id" = id
+  and \\"Node" = {
+    id: \\"Node.id",
+  }
+  
+  @tag("__typename")
+  and \\"SearchResult" =
+    | User(\\"User")
+    | Chat(\\"Chat")
+    | ChatMessage(\\"ChatMessage")
+  
+  and \\"User.id" = id
+  and \\"User.username" = string
+  and \\"User.email" = string
+  and \\"User.role" = \\"Role"
+  and \\"User" = {
+    id: \\"User.id",
+    username: \\"User.username",
+    email: \\"User.email",
+    role: \\"User.role",
+  }
+  
+  and \\"Chat.id" = id
+  and \\"Chat.users" = array<\\"User">
+  and \\"Chat.messages" = array<\\"ChatMessage">
+  and \\"Chat" = {
+    id: \\"Chat.id",
+    users: \\"Chat.users",
+    messages: \\"Chat.messages",
+  }
+  
+  and \\"ChatMessage.id" = id
+  and \\"ChatMessage.content" = string
+  and \\"ChatMessage.time" = \\"Date"
+  and \\"ChatMessage.user" = \\"User"
+  and \\"ChatMessage" = {
+    id: \\"ChatMessage.id",
+    content: \\"ChatMessage.content",
+    time: \\"ChatMessage.time",
+    user: \\"ChatMessage.user",
+  }
+}"
+`;
