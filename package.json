@@ -1,0 +1,4 @@
+{
+  "name": "rescript-openapi-codegen",
+  "packageManager": "yarn@4.0.2"
+}
